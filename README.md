@@ -1,94 +1,95 @@
-#ChatRoom - A Real-Time Messaging Application in C#
+# ChatRoom - A Real-Time Messaging Application in C\#
 
-Overview
+## Overview
 
 ChatRoom is a real-time messaging application built with C# that features a user-friendly graphical interface (UI) and operates on a server-client architecture. It enables instant communication between multiple users while ensuring secure message transmission through encoding, decoding, and encryption techniques.
 
 This project serves as an excellent learning opportunity for computer science students, offering hands-on experience with network programming, socket communication, data serialization, and encryption methods. It is a fun yet fundamental project that strengthens your understanding of real-world client-server applications.
 
-Features
+## Features
 
-✅ Real-Time Messaging - Instantly send and receive messages across connected clients.✅ Server-Client Architecture - The system is built on a structured server-client model.✅ User-Friendly UI - A Windows Forms or WPF-based interface for seamless communication.✅ Message Encoding & Decoding - Ensures proper message formatting and data integrity.✅ Secure Communication - Uses encryption techniques to protect network packets.✅ Scalability - Can be extended to support multiple clients concurrently.✅ Logging System - Tracks user activity for debugging and security purposes.
+✅ **Real-Time Messaging** - Instantly send and receive messages across connected clients.\
+✅ **Server-Client Architecture** - The system is built on a structured server-client model.\
+✅ **User-Friendly UI** - A Windows Forms or WPF-based interface for seamless communication.\
+✅ **Message Encoding & Decoding** - Ensures proper message formatting and data integrity.\
+✅ **Secure Communication** - Uses encryption techniques to protect network packets.\
+✅ **Scalability** - Can be extended to support multiple clients concurrently.\
+✅ **Logging System** - Tracks user activity for debugging and security purposes.
 
-Technology Stack
+## Technology Stack
 
-Languages & Frameworks:
+### Languages & Frameworks:
 
-C# (.NET Framework or .NET Core)
+- C# (.NET Framework or .NET Core)
+- Windows Forms (WinForms) or WPF (Windows Presentation Foundation)
+- Socket Programming (System.Net.Sockets)
 
-Windows Forms (WinForms) or WPF (Windows Presentation Foundation)
+### Networking & Security:
 
-Socket Programming (System.Net.Sockets)
+- TCP/IP Socket Communication
+- Custom Message Protocol for Encoding & Decoding
+- AES/RSA Encryption for Secure Transmission
 
-Networking & Security:
+### Data Handling:
 
-TCP/IP Socket Communication
+- JSON/XML Serialization for Message Exchange
+- Multi-threading for Asynchronous Communication
 
-Custom Message Protocol for Encoding & Decoding
+## Architecture
 
-AES/RSA Encryption for Secure Transmission
+The ChatRoom application follows a **server-client model**, where:
 
-Data Handling:
+- The **server** manages client connections, relays messages, and ensures encrypted communication.
+- The **client** connects to the server, sends messages, and displays incoming messages via the UI.
 
-JSON/XML Serialization for Message Exchange
+### Data Flow
 
-Multi-threading for Asynchronous Communication
+1. **Client sends a message** → Encodes and encrypts the data.
+2. **Server receives the packet** → Decrypts and decodes the message.
+3. **Server relays the message** → Sends it securely to the intended recipients.
+4. **Client receives and displays the message**.
 
-Architecture
+## Installation & Setup
 
-The ChatRoom application follows a server-client model, where:
+### Clone the Repository
 
-The server manages client connections, relays messages, and ensures encrypted communication.
-
-The client connects to the server, sends messages, and displays incoming messages via the UI.
-
-Data Flow
-
-Client sends a message → Encodes and encrypts the data.
-
-Server receives the packet → Decrypts and decodes the message.
-
-Server relays the message → Sends it securely to the intended recipients.
-
-Client receives and displays the message.
-
-Installation & Setup
-
-1. Clone the Repository
-
+```sh
 git clone https://github.com/yourusername/ChatRoom.git
 cd ChatRoom
+```
 
-2. Build the Project
+### Build the Project
 
-Open the project in Visual Studio and build the solution.
+Open the project in **Visual Studio** and build the solution.
 
-3. Run the Server
+### Run the Server
 
-Navigate to the Server folder.
+1. Navigate to the `Server` folder.
+2. Run the `ChatServer.exe` (or execute it via Visual Studio).
 
-Run the ChatServer.exe (or execute it via Visual Studio).
+### Run the Client
 
-4. Run the Client
+1. Navigate to the `Client` folder.
+2. Run `ChatClient.exe` (or execute it via Visual Studio).
+3. Enter the server IP and connect.
 
-Navigate to the Client folder.
+## Future Improvements
 
-Run ChatClient.exe (or execute it via Visual Studio).
+🚀 **Cross-Platform Compatibility** - Extend support for macOS and Linux clients.\
+🚀 **Database Integration** - Store chat history using SQL or NoSQL databases.\
+🚀 **File Sharing** - Enable users to send and receive files.\
+🚀 **Voice & Video Calls** - Implement VoIP communication using WebRTC.\
+🚀 **Mobile App Support** - Develop Android/iOS versions using Xamarin or MAUI.
 
-Enter the server IP and connect.
+## Contribution
 
-Future Improvements
+Contributions are welcome! If you would like to improve the project, please **fork the repository**, create a **feature branch**, and submit a **pull request**.
 
-🚀 Cross-Platform Compatibility - Extend support for macOS and Linux clients.🚀 Database Integration - Store chat history using SQL or NoSQL databases.🚀 File Sharing - Enable users to send and receive files.🚀 Voice & Video Calls - Implement VoIP communication using WebRTC.🚀 Mobile App Support - Develop Android/iOS versions using Xamarin or MAUI.
+## License
 
-Contribution
+This project is licensed under the **MIT License**. Feel free to modify and distribute it.
 
-Contributions are welcome! If you would like to improve the project, please fork the repository, create a feature branch, and submit a pull request.
+## Contact
 
-License
-
-This project is licensed under the MIT License. Feel free to modify and distribute it.
-
-Contact
-
-📧 Email: yourname@example.com🌐 GitHub: yourusername
+📧 **Email:** [yourname@example.com](mailto\:yourname@example.com)\
+🌐 **GitHub:** [yourusername](https://github.com/yourusername)
